@@ -1,3 +1,13 @@
-<h2 id="title">Welcome to Ember.js</h2>
+<h2>Reddit Reader</h2>
+
+<nav>
+  {{#link-to 'posts' 'emberjs'}}ember.js{{/link-to}} |
+  {{#link-to 'posts' 'javascript'}}js{{/link-to}} |
+  {{#link-to 'posts' 'programming'}}programming{{/link-to}}
+</nav>
+
+<p>
+  <em>...or drop any Reddit category into the URL</em>
+</p>
 
 {{outlet}}
