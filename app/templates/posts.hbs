@@ -1,1 +1,10 @@
-{{outlet}}
+{{#each post in data.children}}
+  <h3>
+    <a {{bind-attr href=post.data.url}}>
+      {{post.data.title}}
+    </a>
+  </h3>
+  Comments ({{comment-url post.data.permalink post.data.num_comments}})
+  <br>
+  Score ({{post.data.score}})
+{{/each}}
